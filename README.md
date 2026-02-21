@@ -19,11 +19,11 @@ https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-italy
 https://www.kaggle.com/datasets/unanimad/corona-virus-brazil
 6. Zika Virus Epidemic -
 https://www.kaggle.com/datasets/cdc/zika-virus-epidemic?resource=download
-7. italian_covid_19_regions_data_from2020_to2025 -
+7. Italian COVID-19 regional dataset -
 https://www.kaggle.com/datasets/alessandrabilardi/italian-covid-19-region-dataset/
-8. climate_disease_dataset -
+8. Climate-Driven Disease Spread -
 https://www.kaggle.com/datasets/hopeofchange/climate-driven-disease-spread
-9. Countries_usefulFeatures -
+9. COVID-19 useful features by country -
 https://www.kaggle.com/datasets/ishivinal/covid19-useful-features-by-country
-10. covid-19 data -
+10. COVID-19 Global Impact Tracker -
 https://www.kaggle.com/datasets/shreyasur965/covid-19-global-impact-tracker
