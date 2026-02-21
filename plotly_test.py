@@ -1,24 +1,31 @@
-import plotly.express as px
 import pandas as pd
+import plotly.express as px
 
-# Пример данных
-data = pd.DataFrame({
-    "city": ["Москва", "Лондон", "Нью-Йорк"],
-    "lat": [55.7558, 51.5074, 40.7128],
-    "lon": [37.6176, -0.1278, -74.0060],
-    "value": [100, 200, 300]
-})
+df = pd.read_csv('datasets/COVID-19 in Italy province.csv')
 
-# Строим карту
+df_provinces = df.dropna(subset=['Latitude', 'Longitude']).copy()
+
+df_provinces['Date'] = pd.to_datetime(df_provinces['Date'])
+df_provinces = df_provinces.sort_values('Date')
+df_provinces['Date_str'] = df_provinces['Date'].dt.strftime('%d-%m-%Y')
+
+max_size = df_provinces['TotalPositiveCases'].max()
+
 fig = px.scatter_geo(
-    data,
-    lat="lat",
-    lon="lon",
-    text="city",
-    size="value",
-    color="value",
+    df_provinces,
+    lat="Latitude",
+    lon="Longitude",
+    color="TotalPositiveCases",
+    size="TotalPositiveCases",
+    hover_name="ProvinceName",
+    hover_data={"TotalPositiveCases": True, "Latitude": False, "Longitude": False},
+    animation_frame="Date_str",
     projection="natural earth",
-    title="🌍 Тестовая географическая карта с Plotly"
+    title="Динамика заражений по провинциям Италии",
+    color_continuous_scale="Reds",
+    size_max=60,
+    range_color=[0, max_size / 5]
 )
 
+fig.update_layout(margin={"r":0,"t":40,"l":0,"b":0})
 fig.show()
