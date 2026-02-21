@@ -7,6 +7,15 @@
 
 ## Источники датасетов
 
-1. https://github.com/CSSEGISandData/COVID-19/tree/master
-- time_series_covid_19_confirmed_US.csv
-- time_series_covid_19_deaths_US.csv
+1. Novel Corona Virus 2019 Dataset -
+https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset
+2. Novel Corona Virus Disease in India -
+https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-india
+3. COVID-19 in South Korea -
+https://www.kaggle.com/datasets/kimjihoo/coronavirusdataset
+4. COVID-19 in Italy province -
+https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-italy
+5. Coronavirus - Brazil -
+https://www.kaggle.com/datasets/unanimad/corona-virus-brazil
+6. Zika Virus Epidemic -
+https://www.kaggle.com/datasets/cdc/zika-virus-epidemic?resource=download
